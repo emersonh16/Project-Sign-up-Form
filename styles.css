@@ -1,0 +1,13 @@
+body {background-image: url("C:/Users/Emerson/Documents/repos/Project-Sign-up-Form/images/plant.avif");
+
+}
+
+.rightPanel {
+    background-color: white;
+}
+
+
+@font-face {
+    font-family: Norse;
+    src: url("C:/Users/Emerson/Documents/repos/Project-Sign-up-Form/fonts/Norse-Bold.otf");
+}
