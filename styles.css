@@ -1,13 +1,39 @@
 body {background-image: url("C:/Users/Emerson/Documents/repos/Project-Sign-up-Form/images/plant.avif");
-
+    background-repeat: no-repeat;
+display: flex;
+flex-direction: row;
+align-content: center;
 }
 
 .rightPanel {
     background-color: white;
+    width: 65vw;
+    
 }
 
+img#bannerImage {
+    height: 150px;
+    opacity: 1.0;
+}
 
 @font-face {
     font-family: Norse;
-    src: url("C:/Users/Emerson/Documents/repos/Project-Sign-up-Form/fonts/Norse-Bold.otf");
+    src: url('./fonts/Norse-Bold.otf');
+}
+
+.leftBanner{
+    font-family: Norse;
+    font-size: 4em;
+    color: white;
+    width:35vw;
+    height: 10vw;
+    align-self: center;
+    opacity: 1.0;
+}
+
+.leftBannerContainer{
+    background-color:rgba(0, 0, 0, 0.3);
+    width: 35vw;
+   height: 15vw;
+
 }
