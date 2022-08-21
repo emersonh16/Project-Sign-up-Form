@@ -9,50 +9,76 @@
 </head>
 <body>
     
-    <div class="leftBannerContainer">
-        <div class="leftBanner"> <img id="bannerImage" src="C:\Users\Emerson\Documents\repos\Project-Sign-up-Form\images\odin-lined.png" alt="">ODIN</div>
+<div class="wrapper">
+
+    <div class="leaf">
+        <div class="leftBannerContainer">
+            <div class="leftBanner"> <img id="bannerImage" src="images/odin-lined.png" alt="">ODIN</div>
+        </div>
     </div>
 
 
 
-<div class="rightPanel">
+    <div class="rightPanel">
 
-    <div class="prompt">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. <br> <br> You <em>know</em> you want to.</div>
+        <div class="prompt">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. <br> <br> You <em>know</em> you want to.</div>
 
-    <div class="formContainer">
+
         <h2>Lets do this!</h2>
-       
-        <form action="example.com/path" method="post">
+
+        <div class="formContainer">
+        
+        
+            <form action="example.com/path" method="post">
+                
+                <fieldset>
+                    <div class="formcell">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" placeholder="First Name" 
+                        name="firstName">
+                    </div>
+
+                    <div class="formcell">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" placeholder="Last Name" name="lastName">
+                    </div>
+                </fieldset>
+
+                <div></div>
+
+                <fieldset>
+                    <div class="formcell">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="email" name="email">
+                    </div>
+                    
+                    <div class="formcell">
+                        <label for="phone_number">Phone Number:</label>
+                        <input type="tel" id="phone_number" placeholder="1234567890" name="phone_number" min="10" max="10">
+                    </div>
+                </fieldset>
+
+                <div></div>
+                
+                <fieldset>
+                    <div class="formcell">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Password" name="password" required minlength="8">
+                    </div>
+                    <div class="formcell">
+                        <label for="password">Password Confirmation:</label>
+                        <input type="passwordConfirmation" id="passwordConfrimation" placeholder="Password Confrimation" name="passwordConfirmation" required minlength="8">
+                    </div>
+                </fieldset>
             
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" placeholder="First Name" 
-            name="firstName">
+            </form>
+        </div>
 
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" placeholder="Last Name" name="lastName">
-        
-            <div></div>
+        <button type="submit" class="createAccount">Create Account</button>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="email" name="email">
+        <div class=" footerText">Already have an account? <a href="www.trymefo.com">log in</a></div>
 
-            <label for="phone_number">Phone Number:</label>
-            <input type="tel" id="phone_number" placeholder="1234567890" name="phone_number" min="10" max="10">
-        
-            <div></div>
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="Password" name="password" required minlength="8">
-
-            <label for="password">Password Confirmation:</label>
-            <input type="passwordConfirmation" id="passwordConfrimation" placeholder="Password Confrimation" name="passwordConfirmation" required minlength="8">
-        
-        </form>
     </div>
-
-    <button type="submit" class="createAccount">Create Account</button>
-
-    <div>Already have an account? <a href="www.trymefo.com"></a>log in</a></div>
 
 </div>
 

@@ -1,18 +1,44 @@
-body {background-image: url("C:/Users/Emerson/Documents/repos/Project-Sign-up-Form/images/plant.avif");
+body {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    max-width: 90%;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px 2px #DDD;
+    overflow: hidden;
+    position: fixed;
+    top: 4%;
+    left: 4%;
+    background-color: rgb(240, 240, 240);
+
+}
+
+.leaf{
+    background-image: url("images/plant.avif");
     background-repeat: no-repeat;
-display: flex;
-flex-direction: row;
-align-content: center;
-background-color: rgb(240, 240, 240);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 
 .rightPanel {
     background-color: white;
-    width: 64.1vw;
-    position: absolute;
-    top: 35%;
     right: 0%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    font-family: sans-serif;
+    
     
 }
 
@@ -23,7 +49,7 @@ img#bannerImage {
 
 @font-face {
     font-family: Norse;
-    src: url('./fonts/Norse-Bold.otf');
+    src: url('fonts/Norse-Bold.otf');
 }
 
 .leftBanner{
@@ -36,20 +62,17 @@ img#bannerImage {
 
 .leftBannerContainer{
     background-color:rgba(0, 0, 0, 0.3);
-    width: 35.9vw;
-   height: 10vw;
+    width: 35vw;
    display: flex;
    justify-content: center;
    align-items: baseline;
-   position: absolute;
-   top: 35%;
+   height: fit-content;
 
 }
 
 .prompt {
     font-weight: bold;
     font-size: 1.4em;
-    padding-left: 3vw;
     padding-right: 5vw;
 }
 
@@ -57,4 +80,42 @@ img#bannerImage {
    background-color: rgb(54, 126, 32);
    color: white;
    font-size: 1.3em;
+}
+
+.formContainer {
+ box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, .5);
+ justify-content: space-around;
+ width: 65vw;
+
+}
+
+button {
+  
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.formcell{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+input {
+    width: 13rem;
+}
+
+label {
+    font-size: .6rem;
 }
